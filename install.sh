@@ -26,7 +26,7 @@ elif [ "$UNAME" = "Linux" ] ; then
 fi
 
 # LATEST=$(curl -s https://api.github.com/repos/stoplightio/prism/tags | grep -Eo '"name":.*?[^\\]",'  | head -n 1 | sed 's/[," ]//g' | cut -d ':' -f 2)
-URL="https://github.com/stoplightio/prism/releases/download/v0.6.21/prism_$PLATFORM"
+URL="https://github.com/stoplightio/prism/releases/download/v2.0.0-alpha.3/prism_$PLATFORM"
 SRC=$(pwd)/prism_$PLATFORM
 DEST=/usr/local/bin/prism
 
